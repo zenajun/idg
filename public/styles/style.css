@@ -134,10 +134,18 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 62.5%; }
 
+img {
+  display: block;
+  max-width: 100%; }
+
 .wrapper {
   width: 80%;
-  max-width: 1200px;
+  max-width: 940px;
   margin: 0 auto; }
 
 h1 {
-  text-align: center; }
+  font-family: 'Franklin Gothic Narrow', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #94b8bd;
+  font-size: 5.5rem; }
