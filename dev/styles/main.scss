@@ -8,6 +8,10 @@ img {
 	display: block;
 	max-width: 100%;
 }
+
+p, a {
+	font-size: 1.6rem;
+}
 .wrapper {
 	width: 80%;
 	max-width: 940px;
@@ -21,4 +25,5 @@ h1 {
 	text-transform: uppercase;
 	color: #94b8bd;
 	font-size: 5.5rem;
+	margin: 30px auto;
 }

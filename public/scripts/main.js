@@ -1,3 +1,5 @@
 'use strict';
 
-console.log('Hello');
+$(function () {
+  $('.slider').bxSlider();
+});
