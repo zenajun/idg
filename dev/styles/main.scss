@@ -1,22 +1,79 @@
 @import 'setup';
 
-html {
-	font-size: 62.5%;
-}
-
-img {
-	display: block;
-	max-width: 100%;
-}
-
-p, a {
-	font-size: 1.6rem;
-}
 .wrapper {
-	width: 80%;
-	max-width: 940px;
 	margin: 0 auto;
+	padding: 0 20px;
+	@media (min-width: 675px) {
+		max-width: 940px;
+		padding: 0;
+	}
+}
 
+// Header Nav
+ul.main-nav {
+	margin-bottom: 40px;
+	@media (min-width: 675px) {
+		display: flex;
+	}
+}
+
+.main-nav li {
+	background: #94b8bd;
+	border: 1px solid white;
+	margin-bottom: 10px;
+	@media (min-width: 675px) {
+		width: 20%;
+	}
+}
+
+.main-nav a {
+	font-family: 'Gibson';
+	padding: 27px 30px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 1px;
+	position: relative;
+	transition: 0.2s;
+	font-size: 2.6rem;
+	@media (min-width: 675px) {
+		font-size: 1.4rem;
+		padding: 15px;
+	}
+}
+
+.main-nav a:hover {
+	background: #438d98;
+}
+
+span.triangle::after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+	border-left: 9px solid white;
+	margin-left: 15px;
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	transform: translateY(-50%);
+	@media (min-width: 675px) {
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-left: 5px solid white;
+		margin-left: 8px;
+	}
+}
+
+// Header Hero
+
+header.hero {
+	@media (min-width: 675px) {
+		display: flex;
+	}
 }
 
 h1 {
@@ -24,6 +81,89 @@ h1 {
 	text-align: center;
 	text-transform: uppercase;
 	color: #94b8bd;
-	font-size: 5.5rem;
+	font-size: 6.8rem;
 	margin: 30px auto;
+	@media (min-width: 675px) {
+		font-size: 5.5rem;		
+	}
 }
+
+//CTA
+div.cta {
+	position: relative;
+	@media (min-width: 675px) {
+		width: 50%;
+	}
+}
+
+a.shop-all {
+	display: none;
+	@media (min-width: 675px) {
+		display: block;
+	}
+}
+
+a.shop-all-m {
+	display: block;
+	background: black;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Gibson';
+	font-size: 2.6rem;
+	text-align: center;
+	padding: 30px;
+	margin: 60px auto;
+	transition: 0.2s;
+}
+
+a.shop-all-m:hover {
+	background: #438d98;
+}
+
+// Slider 
+.bx-wrapper {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 0;
+}
+
+.bx-wrapper .bx-pager {
+	bottom: 30px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: white;
+	width: 16px;
+	height: 16px;
+	border-radius: 6px;
+	border: 1px solid #dedede;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #438d98;
+	;
+}
+
+// Aside products
+
+aside.products {
+	@media (min-width: 675px) {
+		width: 50%;
+		padding: 20px 45px 0;
+	}
+}
+
+.hero .wrapper {
+	@media (min-width: 675px) {
+		display: flex;
+	}
+}
+
+div.product {
+	display: flex;
+	align-items: center;
+	margin-bottom: 75px;
+}
+
