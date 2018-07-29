@@ -1,7 +1,7 @@
 const app = {};
 
 app.slider = () => {
-  const windowWidth = $(window).innerWidth();
+  const windowWidth = $(window).width();
   
   if (windowWidth < 675) {
     $('.slider').bxSlider({

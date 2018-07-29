@@ -3,7 +3,7 @@
 var app = {};
 
 app.slider = function () {
-  var windowWidth = $(window).innerWidth();
+  var windowWidth = $(window).width();
 
   if (windowWidth < 675) {
     $('.slider').bxSlider({
