@@ -176,6 +176,9 @@ a.shop-all-m:hover {
 
 .bx-wrapper .bx-pager {
 	bottom: 30px;
+	@media (min-width: 675px) {
+		display: none;
+	}
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
