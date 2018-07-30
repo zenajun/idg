@@ -92,7 +92,6 @@ span.triangle::after {
 header.hero {
 	@media (min-width: 675px) {
 		display: flex;
-		align-items: flex-end;
 	}
 }
 
@@ -207,6 +206,7 @@ aside.products {
 .hero .wrapper {
 	@media (min-width: 675px) {
 		display: flex;
+		align-items: flex-end;
 	}
 }
 
@@ -217,6 +217,10 @@ div.product {
 	display: flex;
 	@media (min-width: 675px) {
 		margin-bottom: 0px;
+		margin-top: 15px;
+	}
+	@media (min-width: 900px) {
+		margin-top: 50px;
 	}
 }
 
@@ -230,7 +234,10 @@ div.product-image {
 
 .product-image img {
 	margin: 0 auto;
-	padding: 25px;
+	max-width: 80%;
+	@media (min-width: 940px) {
+		max-width: 100%;
+	}
 }
 
 div.product-text {
@@ -345,6 +352,10 @@ a.shop-product span::after {
 	font-weight: 400;
 	border-bottom: 2px solid #dfdede;
 	padding-bottom: 20px;
+	@media (min-width: 675px) {
+		font-size: 1.8rem;
+		letter-spacing: 1px;
+	}
 }
 
 div.explore-product {
@@ -352,7 +363,7 @@ div.explore-product {
 	margin: 70px auto;
 	@media (min-width: 675px) {
 		flex-direction: column;
-		margin-right: 20px;
+		margin: 0 20px 0 0;
 	}
 }
 
