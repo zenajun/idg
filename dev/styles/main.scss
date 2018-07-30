@@ -1,5 +1,10 @@
 @import 'setup';
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
 .wrapper {
 	@media (min-width: 675px) {
 		max-width: 940px;
@@ -18,7 +23,7 @@
 
 // Header: Masthead
 
-.masthead picture {
+.masthead img {
 	margin: 0 auto;
 	display: block;
 }
@@ -122,11 +127,16 @@ a.shop-all {
 		color: white;
 		text-align: center;
 		display: inline-block;
-		padding: 15px 50px;
+		padding: 10px 25px;
 		position: absolute;
-		bottom: 40px;
-		left: 30px;
+		bottom: 25px;
+		left: 20px;	
 		transition: 0.2s;
+		@media (min-width: 940px) {
+			padding: 15px 50px;
+			bottom: 40px;
+			left: 30px;
+		}
 	}
 }
 
@@ -184,10 +194,10 @@ a.shop-all-m:hover {
 // Aside products
 
 aside.products {
+	padding-top: 20px;
 	@media (min-width: 675px) {
 		width: 50%;
 		padding: 0 15px;
-		// padding: 0 45px;
 	}
 }
 
@@ -217,7 +227,6 @@ div.product-image {
 
 .product-image img {
 	margin: 0 auto;
-	// padding: 10px;
 	padding: 25px;
 }
 
@@ -292,12 +301,17 @@ a.shop-product {
 	font-size: 1.8rem;
 	color: black;
 	position: relative;
+	transition: 0.2s;
 	@media (min-width: 550px) {
 		font-size: 2.8rem;
 	}
 	@media (min-width: 675px) {
 		font-size: 1.4rem;
 	}
+}
+
+a.shop-product:hover {
+	text-decoration: underline;
 }
 
 a.shop-product span::after {
@@ -405,12 +419,17 @@ a.read-more {
 	font-size: 2rem;
 	color: black;
 	position: relative;
+	transition: 0.2s;
 	@media (min-width: 550px) {
 		font-size: 2.8rem;
 	}
 	@media (min-width: 675px) {
 		font-size: 1.4rem;
 	}
+}
+
+a.read-more:hover {
+	text-decoration: underline;
 }
 
 .read-more span::after {

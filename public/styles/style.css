@@ -150,6 +150,10 @@ ul {
   padding: 0;
   list-style-type: none; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
 @media (min-width: 675px) {
   .wrapper {
     max-width: 940px;
@@ -163,7 +167,7 @@ ul {
     .wrapper-m {
       padding: 0; } }
 
-.masthead picture {
+.masthead img {
   margin: 0 auto;
   display: block; }
 
@@ -262,12 +266,17 @@ a.shop-all {
       color: white;
       text-align: center;
       display: inline-block;
-      padding: 15px 50px;
+      padding: 10px 25px;
       position: absolute;
-      bottom: 40px;
-      left: 30px;
+      bottom: 25px;
+      left: 20px;
       -webkit-transition: 0.2s;
       transition: 0.2s; } }
+  @media (min-width: 675px) and (min-width: 940px) {
+    a.shop-all {
+      padding: 15px 50px;
+      bottom: 40px;
+      left: 30px; } }
 
 a.shop-all:hover {
   background: #93b6bb; }
@@ -311,10 +320,12 @@ a.shop-all-m:hover {
 .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: #438d98; }
 
-@media (min-width: 675px) {
-  aside.products {
-    width: 50%;
-    padding: 0 15px; } }
+aside.products {
+  padding-top: 20px; }
+  @media (min-width: 675px) {
+    aside.products {
+      width: 50%;
+      padding: 0 15px; } }
 
 @media (min-width: 675px) {
   .hero .wrapper {
@@ -410,13 +421,18 @@ a.shop-product {
   text-decoration: none;
   font-size: 1.8rem;
   color: black;
-  position: relative; }
+  position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
   @media (min-width: 550px) {
     a.shop-product {
       font-size: 2.8rem; } }
   @media (min-width: 675px) {
     a.shop-product {
       font-size: 1.4rem; } }
+
+a.shop-product:hover {
+  text-decoration: underline; }
 
 a.shop-product span::after {
   content: '';
@@ -520,13 +536,18 @@ a.read-more {
   text-decoration: none;
   font-size: 2rem;
   color: black;
-  position: relative; }
+  position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
   @media (min-width: 550px) {
     a.read-more {
       font-size: 2.8rem; } }
   @media (min-width: 675px) {
     a.read-more {
       font-size: 1.4rem; } }
+
+a.read-more:hover {
+  text-decoration: underline; }
 
 .read-more span::after {
   content: '';
