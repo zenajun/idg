@@ -87,6 +87,7 @@ span.triangle::after {
 header.hero {
 	@media (min-width: 675px) {
 		display: flex;
+		align-items: flex-end;
 	}
 }
 
@@ -160,6 +161,7 @@ a.shop-all-m:hover {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	border: 0;
+	margin-bottom: 0;
 }
 
 .bx-wrapper .bx-pager {
@@ -383,6 +385,17 @@ div.explore-product-text {
 	@media (min-width: 675px) {
 		font-size: 1.2rem;
 	}
+}
+
+span.mobile-hidden {
+	display: none;
+	@media (min-width: 675px) {
+		display: inline;
+	}
+}
+
+span.plum-promo {
+	text-transform: uppercase;
 }
 
 a.read-more {

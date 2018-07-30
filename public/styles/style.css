@@ -228,7 +228,10 @@ span.triangle::after {
   header.hero {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; } }
 
 h1 {
   font-family: 'Franklin Gothic Narrow', 'Arial Narrow', Arial, sans-serif;
@@ -292,7 +295,8 @@ a.shop-all-m:hover {
 .bx-wrapper {
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 0; }
+  border: 0;
+  margin-bottom: 0; }
 
 .bx-wrapper .bx-pager {
   bottom: 30px; }
@@ -500,6 +504,15 @@ div.explore-product-text {
   @media (min-width: 675px) {
     .explore-product-text p {
       font-size: 1.2rem; } }
+
+span.mobile-hidden {
+  display: none; }
+  @media (min-width: 675px) {
+    span.mobile-hidden {
+      display: inline; } }
+
+span.plum-promo {
+  text-transform: uppercase; }
 
 a.read-more {
   text-transform: lowercase;
