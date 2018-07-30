@@ -1,10 +1,5 @@
 @import 'setup';
 
-a {
-	text-decoration: none;
-	color: black;
-}
-
 .wrapper {
 	@media (min-width: 675px) {
 		max-width: 940px;

@@ -145,14 +145,14 @@ p,
 a {
   font-size: 1.6rem; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none; }
-
-a {
-  text-decoration: none;
-  color: black; }
 
 @media (min-width: 675px) {
   .wrapper {
