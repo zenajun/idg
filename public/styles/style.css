@@ -434,10 +434,13 @@ a.shop-product {
   color: black;
   position: relative;
   -webkit-transition: 0.2s;
-  transition: 0.2s; }
+  transition: 0.2s;
+  display: block;
+  max-width: 120px; }
   @media (min-width: 550px) {
     a.shop-product {
-      font-size: 2.8rem; } }
+      font-size: 2.8rem;
+      max-width: 100%; } }
   @media (min-width: 675px) {
     a.shop-product {
       font-size: 1.4rem; } }
@@ -510,7 +513,7 @@ div.explore-product:nth-child(2) {
             justify-content: space-between; } }
 
 div.explore-product-text {
-  padding-left: 35px;
+  padding-left: 15px;
   padding-top: 10px;
   width: 60%; }
   @media (min-width: 675px) {
