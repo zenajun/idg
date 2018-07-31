@@ -309,7 +309,6 @@ a.shop-product {
 	color: black;
 	position: relative;
 	transition: 0.2s;
-	display: block;
 	@media (min-width: 550px) {
 		font-size: 2.8rem;
 	}
@@ -329,7 +328,7 @@ a.shop-product span::after {
 	border-top: 11px solid transparent;
 	border-bottom: 11px solid transparent;
 	border-left: 11px solid black;
-	margin-left: 10px;
+	margin-left: 20px;
 	position: absolute;
 	z-index: 10;
 	top: 45%;
