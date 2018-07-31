@@ -139,7 +139,8 @@ img {
   max-width: 100%; }
 
 body {
-  font-family: 'Gibson'; }
+  font-family: 'Gibson';
+  min-width: 320px; }
 
 p,
 a {
@@ -433,7 +434,8 @@ a.shop-product {
   color: black;
   position: relative;
   -webkit-transition: 0.2s;
-  transition: 0.2s; }
+  transition: 0.2s;
+  display: block; }
   @media (min-width: 550px) {
     a.shop-product {
       font-size: 2.8rem; } }
@@ -451,7 +453,7 @@ a.shop-product span::after {
   border-top: 11px solid transparent;
   border-bottom: 11px solid transparent;
   border-left: 11px solid black;
-  margin-left: 20px;
+  margin-left: 10px;
   position: absolute;
   z-index: 10;
   top: 45%;
