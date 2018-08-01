@@ -523,7 +523,6 @@ div.explore-product-image {
 
 div.explore-product-text {
   padding-left: 15px;
-  padding-top: 10px;
   width: 50%; }
   @media (min-width: 675px) {
     div.explore-product-text {
